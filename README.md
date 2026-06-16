@@ -1,2 +1,2 @@
-# GitMC
+# GitLite
  
