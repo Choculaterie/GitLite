@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "gitlite",
+	"version": "${version}",
+	"name": "GitLite",
+	"description": "Git-style version control for schematics: push, view history, and fork. An addon for Litematic Downloader.",
+	"authors": ["Choculat"],
+	"contact": {
+		"homepage": "https://choculaterie.com/",
+		"sources": "https://github.com/Choculaterie/GitMC",
+		"issues": "https://github.com/Choculaterie/GitMC/issues"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"main": ["com.choculaterie.gitlite.GitLite"],
+		"client": ["com.choculaterie.gitlite.GitLiteClient"]
+	},
+	"mixins": [
+		{
+			"config": "gitlite.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.5",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*",
+		"litematic-downloader": ">=1.1.8"
+	}
+}
